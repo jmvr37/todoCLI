@@ -13,7 +13,6 @@ rl.setPrompt(">")
  console.log(chalk.yellow("TO-DO List CLI"));
  console.log("---------------------------------------------------")
  console.log("Welcome to your Todo List\n");
- //console.log(chalk.green.bold("(v) View • ( n ) New • (cX) Complete • (dX) Delete • (q) Quit \n>"));
 
 const readFile = fileName => {
     try {
@@ -66,7 +65,6 @@ const checkAnswer = answer => {
         }
     rl.question(`(v) View • (n) New • (cX) Complete • (dX) Delete • (q) Quit\n>`, checkAnswer);
     }   else if (command === 'd'){
-      //To delete a task:
   
       let indexNum = parseInt(answer.slice(1));
               todoTasks.forEach((element, index) => {
